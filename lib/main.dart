@@ -1,4 +1,5 @@
 import 'package:eyes_for_blinds/screens/home.dart';
+import 'package:eyes_for_blinds/screens/guide.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const HomePage(),
+      routes: {'/guide': (context) => const GuideScreen()},
     );
   }
 }
